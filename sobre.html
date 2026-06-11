@@ -1,42 +1,29 @@
 !<!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim</title>
-</head>
-<body>
+<head lang="en">
+  <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="widht=device=widht, initial-scale=1.0"
+   <title>Document</title>
+   </head>
+   <body>
+    <h1>Sobre</h1>
+    <p>informações importantes</p>
 
-    <header>
-        <h1>Eu</h1>
-        <p>Estudo na <strong>federal</strong>, tenho 15 anos e moro em Diogo Lopes.</p>
-       <div>
-         <img src="assets/imgs/WhatsApp Image 2026-05-21 at 13.54.06.jpeg" alt="foto de onde moro">
-         </div>
-    </header>
+    <section>
+        <h2>Envie uma mensagem</h2>
+        <form action="#">
+            <label for="nome">Nome completo:</label><br />
+            <input type="text" id="nome" name="nome" /><br />
 
-    <main>
-        <section>
-            <h2>coisas sobre mim</h2>
-            <p>
-                <li>
-                    cabelo cacheado
-                </li>
-                <li>
-                    1,60 de altura
-                </li>
-                <li>
-                    estudo na federal
-                </li>
-            </p>
-        </section>
-    </main>
+            <label for="mensagem">Mensagem:</label><br />
+            <textarea name="mensagem" id="mensagem" rows="5"></textarea><br>
 
-    <footer>
-        <h3>Sandriely Lorrayny-IFRN</h3>
-        <p>Email: souza.sandriely@escolar.ifrn.edu.br</p>
-    </footer>
-    
-</body>
-</html>
+            <label for="linguagens">Linguagem preferida web preferida:</label><br>
+            <select name="linguagens" id="linguagens">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javaScript">JavaScript</option>
+            </select>
+        </form>
+    </section>
+   </body>
