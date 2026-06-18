@@ -1,13 +1,18 @@
-!<!DOCTYPE html>
-<head lang="en">
+<!doctype html>
+<html lang="pt-br">
   <head>
    <meta charset="UTF-8" />
-   <meta name="viewport" content="widht=device=widht, initial-scale=1.0"
-   <title>Document</title>
+   <meta name="viewport" content="widht=device=widht, initial-scale=1.0" />
+   <title>Sobre</title>
    </head>
    <body>
     <h1>Sobre</h1>
-    <p>informações importantes</p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Exercitationem aperiam eveniet corrupti explicabo in placeat
+        magnam nulla temporibus amet quas   illum, repellat,
+        libero ab quis sequi maxime quibusdam, consequuntur et.
+    </p>
 
     <section>
         <h2>Envie uma mensagem</h2>
@@ -15,15 +20,50 @@
             <label for="nome">Nome completo:</label><br />
             <input type="text" id="nome" name="nome" /><br />
 
-            <label for="mensagem">Mensagem:</label><br />
-            <textarea name="mensagem" id="mensagem" rows="5"></textarea><br>
+            <label for="senha">Senha:</label><br />
+            <input type="password" name="senha" id="senha" /><br />
 
-            <label for="linguagens">Linguagem preferida web preferida:</label><br>
-            <select name="linguagens" id="linguagens">
+            <!-- Botões de rádio -->
+            <p>Brasil vai ser campeão?</p>
+
+            <input type="radio" id="sim" name="brasil" value="Sim" />
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="brasil" value="Não" />
+            <label for="nao">Não</label>
+            <br />
+
+            <!-- Caixas de seleção -->
+             <p>Selecione as seleções favoritas ao título de 2026:</p>
+
+             <input type="checkbox" id="brasil" name="brasil" value="Brasil" />
+             <label for="brasil">Brasil</label>
+             <input type="checkbox" id="franca" name="franca" value="França" />
+             <label for="franca">França</label>
+             <input type="checkbox" id="alemanha" name="alemanha" value="Alemanha" />
+             <label for="alemanha">Alemanha</label>
+             <input type="checkbox" id="ned" name="ned" value="Países Baixos" />
+             <label for="ned">Países Baixos</label>
+
+             <br />
+
+             <!-- Aréa de texto -->
+             <label for="mensagem">Mensagem:</label><br />
+             <textarea name="mensagem" id="mensagem" rows="5"></textarea><br />
+
+             <label for="linguagens">Linguagem web preferida:</label><br />
+             <select name="linguagens" id="linguagens">
                 <option value="html">HTML</option>
                 <option value="css">CSS</option>
-                <option value="javaScript">JavaScript</option>
-            </select>
-        </form>
-    </section>
-   </body>
+                <option value="javascript">JavaScript</option>
+                <option value="nenhuma">NENHUMA</option>
+             </select>
+             <br />
+
+             <br />
+             <button type="submit" onclick="alert('ME CLICOU!')">Enviar</button>
+           </form>
+           </section>
+
+           <a href="index.html">Ínicio</a>
+           </body>
+         </html>
