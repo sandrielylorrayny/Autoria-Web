@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro de Participantes de Oficina</title>
+    <link real="stylesheet" href="./styles/# styles.css">
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial,'Courier New', Courier, monospace;
+        }
+    </style>
 </head>
-<body>
-    <h1>Cadastro de Participantes de Oficina</h1>
+</body>
+    <h1 style="color: navy; background-color: aqua;">Cadastro de Participantes de Oficina</h1>
 
     <form>
 
-        <label for="nome">Nome Completo:</label><br>
+        <label for="nome" class="negrito">Nome Completo:</label><br>
         <input type="text" id="nome" name="nome"><br><br>
 
         <label for="senha">Senha de Acesso:</label><br>
@@ -65,7 +72,7 @@
 
     <h2>Participantes já inscritos</h2>
 
-    <table border="1">
+    <table border="1" id="tabela">
         <tr>
             <th>Nome</th>
             <th>Oficina</th>
@@ -109,6 +116,12 @@
         </tr>
 
     </table>
+
+    <h2>Destacando parte especifica de um texto</h2>
+
+    <p>
+        Lorem ipsum <span class="negrito">dolor</span> dolor sit amet consectetur adipisicing elit. Delectus error sit quos dignissimos veritatis possimus aperiam voluptatem enim nam, fugit quasi optio fuga officia. Laudantium architecto tempora dicta excepturi omnis.
+    </p>
 
 </body>
 </html>
