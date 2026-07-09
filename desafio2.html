@@ -1,127 +1,128 @@
 <!doctype html>
-<html lang="pt-br"
-<head>
-    <meta charset="UTF-8">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
     <title>Cadastro de Participantes de Oficina</title>
-    <link real="stylesheet" href="./styles/# styles.css">
-    <style>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- <style>
         body {
             background-color: lightgray;
             font-family: Arial,'Courier New', Courier, monospace;
         }
-    </style>
-</head>
-</body>
-    <h1 style="color: navy; background-color: aqua;">Cadastro de Participantes de Oficina</h1>
+    </style> -->
+  </head>
+  <body>
+    <h1 style="color: navy; background-color: aqua">
+      Cadastro de Participantes de Oficina
+    </h1>
 
     <form>
+      <label for="nome" class="negrito">Nome Completo:</label><br />
+      <input type="text" id="nome" name="nome" /><br /><br />
 
-        <label for="nome" class="negrito">Nome Completo:</label><br>
-        <input type="text" id="nome" name="nome"><br><br>
+      <label for="senha">Senha de Acesso:</label><br />
+      <input type="password" id="senha" name="senha" /><br /><br />
 
-        <label for="senha">Senha de Acesso:</label><br>
-        <input type="password" id="senha" name="senha"><br><br>
+      <label for="oficina">Oficina Principal:</label><br />
+      <select id="oficina" name="oficina">
+        <option>Selecione uma oficina</option>
+        <option>HTML e CSS</option>
+        <option>JavaScript</option>
+        <option>Banco de Dados</option>
+        <option>Robótica</option></select
+      ><br /><br />
 
-        <label for="oficina">Oficina Principal:</label><br>
-        <select id="oficina" name="oficina">
-            <option>Selecione uma oficina</option>
-            <option>HTML e CSS</option>
-            <option>JavaScript</option>
-            <option>Banco de Dados</option>
-            <option>Robótica</option>
-        </select><br><br>
+      <p>Turno:</p>
+      <input type="radio" id="manha" name="turno" />
+      <label for="manha">Manhã</label>
 
-        <p>Turno:</p>
-        <input type="radio" id="manha" name="turno">
-        <label for="manha">Manhã</label>
+      <input type="radio" id="tarde" name="turno" />
+      <label for="tarde">Tarde</label>
 
-        <input type="radio" id="tarde" name="turno">
-        <label for="tarde">Tarde</label>
+      <input type="radio" id="noite" name="turno" />
+      <label for="noite">Noite</label>
 
-        <input type="radio" id="noite" name="turno">
-        <label for="noite">Noite</label>
+      <br /><br />
 
-        <br><br>
+      <p>Aréas de Interesse:</p>
 
-        <p>Aréas de Interesse:</p>
+      <input type="checkbox" id="web" />
+      <label for="web">Programação Web</label>
 
-        <input type="checkbox" id="web">
-        <label for="web">Programação Web</label>
+      <input type="checkbox" id="design" />
+      <label for="design">Design</label>
 
-        <input type="checkbox" id="design">
-        <label for="design">Design</label>
+      <input type="checkbox" id="bd" />
+      <label for="bd">Banco de Dados</label>
 
-        <input type="checkbox" id="bd">
-        <label for="bd">Banco de Dados</label>
+      <input type="checkbox" id="robotica" />
+      <label for="robotica">Robótica</label>
 
-        <input type="checkbox" id="robotica">
-        <label for="robotica">Robótica</label>
+      <br /><br />
 
-        <br><br>
+      <label for="obs">Observações:</label><br />
+      <textarea id="obs" rows="6" cols="55"></textarea>
 
-        <label for="obs">Observações:</label><br>
-        <textarea id="obs" rows="6" cols="55"></textarea>
+      <br /><br />
 
-        <br><br>
-
-        <input type="submit" value="Enviar Inscrição">
-
+      <input type="submit" value="Enviar Inscrição" />
     </form>
 
-    <hr>
+    <hr />
 
     <h2>Participantes já inscritos</h2>
 
     <table border="1" id="tabela">
-        <tr>
-            <th>Nome</th>
-            <th>Oficina</th>
-            <th>Turno</th>
-            <th>Status</th>
-        </tr>
+      <tr>
+        <th>Nome</th>
+        <th>Oficina</th>
+        <th>Turno</th>
+        <th>Status</th>
+      </tr>
 
-        <tr>
-            <td>Luís Henrique</td>
-            <td>HTML e CSS</td>
-            <td>Manhã</td>
-            <td>Confirmado</td>
-        </tr>
+      <tr>
+        <td>Luís Henrique</td>
+        <td>HTML e CSS</td>
+        <td>Manhã</td>
+        <td>Confirmado</td>
+      </tr>
 
-        <tr>
-            <td>Lara Jamily</td>
-            <td>JavaScript</td>
-            <td>Tarde</td>
-            <td>Pendente</td>
-        </tr>
+      <tr>
+        <td>Lara Jamily</td>
+        <td>JavaScript</td>
+        <td>Tarde</td>
+        <td>Pendente</td>
+      </tr>
 
-        <tr>
-            <td>Ana Clara</td>
-            <td>Banco de Dados</td>
-            <td>Noite</td>
-            <td>Confirmado</td>
-        </tr>
+      <tr>
+        <td>Ana Clara</td>
+        <td>Banco de Dados</td>
+        <td>Noite</td>
+        <td>Confirmado</td>
+      </tr>
 
-        <tr>
-            <td>Iaponira Peixoto</td>
-            <td>Robótica</td>
-            <td>Tarde</td>
-            <td>Em análise</td>
-        </tr>
+      <tr>
+        <td>Iaponira Peixoto</td>
+        <td>Robótica</td>
+        <td>Tarde</td>
+        <td>Em análise</td>
+      </tr>
 
-        <tr>
-            <td>Lorenzo Miguel</td>
-            <td>HTML e CSS</td>
-            <td>Manhã</td>
-            <td>Confirmado</td>
-        </tr>
-
+      <tr>
+        <td>Lorenzo Miguel</td>
+        <td>HTML e CSS</td>
+        <td>Manhã</td>
+        <td>Confirmado</td>
+      </tr>
     </table>
 
     <h2>Destacando parte especifica de um texto</h2>
 
     <p>
-        Lorem ipsum <span class="negrito">dolor</span> dolor sit amet consectetur adipisicing elit. Delectus error sit quos dignissimos veritatis possimus aperiam voluptatem enim nam, fugit quasi optio fuga officia. Laudantium architecto tempora dicta excepturi omnis.
+      Lorem ipsum <span class="negrito">dolor</span> dolor sit amet consectetur
+      adipisicing elit. Delectus error sit quos dignissimos veritatis possimus
+      aperiam voluptatem enim nam, fugit quasi optio fuga officia. Laudantium
+      architecto tempora dicta excepturi omnis.
     </p>
-
-</body>
+  </body>
 </html>
