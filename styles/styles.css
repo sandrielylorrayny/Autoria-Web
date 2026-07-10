@@ -8,6 +8,18 @@
   --coral: #fe5f55;
 }
 
+/* CSS Reset */
+* {
+  margin: 0; /* Espaçamento externo*/
+  padding: 0; /* Espaçamento interno*/
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", "Arial";
+
+}
+
 /* Seleção de elemento */
 h2 {
   font-family: "Courier New", Courier, monospace;
@@ -28,4 +40,63 @@ h2 {
 
 h1 {
   font-family: "Geist Pixel", "Courier New", Courier, monospace;
+}
+
+img {
+  height: 400px; /*Altura*/
+  border-radius: 30px 30px 30px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+nav-sections{
+  /* margin-top: 15px; */
+  /* top right bottom left */
+  margin: 15px 30px 50px;
+}
+
+#nav-sections ul {
+  list-style-type: none;
+}
+
+#nav-sections li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--sky);
+  background-color: var(--blue-slate);
+  border-radius: 5px;
+}
+
+a:hover {
+  color: var(--coral);
+  box-shadow: 0 0 10px var(--sky);
+}
+
+#nav-links {
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--sky);
+    background-color: #df3c80;
+    border-radius: 5px;
+  }
+
+  a:hover {
+    color: rgb(201, 158, 201);
+    box-shadow: 0 0 10px var(--white);
+  }
 }
