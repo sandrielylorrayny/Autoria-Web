@@ -16,8 +16,8 @@
 }
 
 body {
-  font-family: "Quicksand", "Arial";
-
+  font-family: "Quicksand", "Arial", sans-serif;
+  padding: 50px;
 }
 
 /* Seleção de elemento */
@@ -99,4 +99,21 @@ a:hover {
     color: rgb(201, 158, 201);
     box-shadow: 0 0 10px var(--white);
   }
+}
+
+.fonte-maior {
+  font-size: 48px;
+  background-color: var(--glaucous);
+  padding-left: 20px;
+  /* border-width: 10px;
+  border-style: solid;
+  border-color: green; */
+  border: 10px dotted green
+}
+
+.teste-espacamento {
+  background-color: var(--coral);
+  padding: 20px 40px;
+  margin-bottom: 100px;
+  border-bottom: 10px solid black;
 }
