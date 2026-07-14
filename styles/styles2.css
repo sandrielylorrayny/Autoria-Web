@@ -1,4 +1,112 @@
+/* Paleta de cores */
 :root {
-    --cor-fundo: #345373;
-    --cor-texto: 435
+    --azul-escuro: #1f3c88;
+    --azul: #4a69bd;
+    --azul-claro: #d6eaf8;
+    --cinza: #f4f4f4;
+    --branco: #ffffff;
+    --preto: #333333;
+}
+
+/* Corpo da página */
+body {
+    margin: 0;
+    background-color: var(--cinza);
+    color: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--azul-escuro);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Menu */
+nav {
+    background-color: var(--azul);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Seções */
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Títulos */
+h1,
+h2,
+.titulo-secao {
+    font-family: Georgia, serif;
+    color: var(--azul-escuro);
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Cards */
+.card-programa {
+    background-color: var(--azul-claro);
+    border: 1px solid var(--azul);
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* IDs */
+#inicio {
+    background-color: #eaf4fc;
+}
+
+#programacao {
+    border-left: 5px solid var(--azul);
+}
+
+#contato {
+    border-left: 5px solid var(--azul-escuro);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--azul-escuro);
+    color: white;
+    text-align: center;
+    padding: 15px;
 }

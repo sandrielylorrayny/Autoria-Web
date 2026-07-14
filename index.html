@@ -1,15 +1,23 @@
 <!doctype html>
 <html lang="pt-br">
+  <!-- reúne metadados, títulos, links externos e configurações. -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Autoria Web</title>
   </head>
+  <!-- contém o conteúdo visível da página -->
   <body>
-
+    <!-- <header>: define o cabeçalho. Exibe logo, título, nav... -->
     <header
     <h1>Eu amei Autoria Web!</h1>
+    <!-- <h2>Eu amei Autoria Web!</h2>
+    <h3>Eu amei Autoria Web!</h3>
+    <h4>Eu amei Autoria Web!</h4>
+    <h5>Eu amei Autoria Web!</h5>
+    <h6>Eu amei Autoria Web!</h6> -->
+
     <nav id="nav-links">
       <ul>
         <li>
@@ -19,16 +27,14 @@
           <a href="sobre.html">Sobre</a>
         </li>
         <li>
-          <a
-            href="https://github.com/sandrielylorrayny/Autoria-Web"
-            target="_blank"
+           <a href="https://github.com/sandrielylorrayny/Autoria-Web" target="_blank"
             >Github</a
           >
         </li>
       </ul>
-      <ul>
     </nav>
     
+    <!-- <p class="negrito fonte-maior">seções</p> -->
     <nav id="nav-sections">
       <ul>
         <li>
@@ -40,26 +46,61 @@
         <li>
           <a href="#section3">Seção 3</a>
         </li>
+        <li>
+          <a href="#section4">Seção 4</a>
+        </li>
       </ul>
     </nav>
+  </header>
 
-<main>
+  <br />
+
+  <!--
+    <main>: delimita o conteúdo da página, único por documento,
+    facilitando navegação por leitores de tela
+    -->
+<br>
 
   <div class="teste-espacamento">
     <p class="fonte-maior">Teste de Espaçamento</p>
   </div>
 
+  <!-- 
+    <section>: seção temática do documento, geralmente com um título próprio
+  -->
   <section id="section1">
     <h2>Seção 1</h2>
-    <div>
-      <img src="https://github.com/sandrielylorrayny.png" alt="Avatar">
-  <img src="assets/imgs/mickey.png" alt="Mickey Mouse">
-    </div>
-  </section>
 
-  <p>
-    <section id="section2">
-  <h2>Seção 2</h2>
+    <!-- 
+    <div>: contêiner genérico em bloco, sem significado semântico próprio,
+     útil para agrupamento quando nenhum dos elementos semânticos se aplica.
+     -->
+    <div>
+      <img 
+      src="https://github.com/sandrielylorrayny.png"
+      alt="perfil"
+      class="avatar"
+      />
+    </div>
+
+    <!--
+      <article>: bloco de conteúdo independente e reutilizável
+      (post de blog, notícia, card de produto, comentário),
+      que faz sentido fora do contexto imediato.
+    -->
+      <article>
+        <p>
+          Lorem ipsum <strong>dolor</strong>, sit amet consectetur, adipisicing
+          elit. Maiores voluptatibus in voluptatem praesentium
+          assumenda velit laboriosam fugit, laudantium eum quia. 
+          Error incidunt asperiores sit sint obcaecati. Dignissimos aut necessitatibus impedit?
+        </p>
+      </article>
+    </section>
+  <br />
+
+ <section id="section2">
+   <h2>Seção 2</h2>
   Lorem, ipsum <strong>dolor</strong>, dolor sit amet consectetur adipisicing elit. Rerum consectetur, rem iste recusandae corporis sunt? Esse voluptates mollitia earum commodi repellendus. Placeat dignissimos ex alias. Nobis labore eaque fugiat inventore?</p>
    <br />
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus expedita libero, est dolores voluptatibus incidunt nobis magnam! Nulla sint saepe ad consectetur quae recusandae iusto, laboriosam eius ipsam optio dolorum.</p>
